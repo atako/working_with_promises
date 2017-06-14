@@ -4,5 +4,17 @@
   <body>
     <button>Click me!</button>
 
+    <script>
+      let counter = 0;
+
+      document.querySelector('button').addEventListener('click', () => {
+        ++counter;
+      });
+
+      setTimeout(function() {
+        counter > 5 ? alert (`You won with ${counter} score!`) : alert ('You lost');
+      }, 2000);
+    
+    </script>
   </body>
 </html>
